@@ -8,7 +8,7 @@ This program allows you to generate QR codes, hide them within host images using
 
 The program includes the following functionalities:
 
-1. **Generate a QR Code**: Create a QR code with a custom message and save it as a `.png` file.
+1. **Generate a QR Code**: Create a QR code with a custom message and save it as a `.png` file. ![option_1](1_create_qr.png) ![qr generated](1_normal_qr.png)
 2. **Hide a QR Code in a Host Image**: Select a generated QR code and hide it within a host image using Voronoi diagrams, generating a key file for extraction.
 4. **Extract a QR Code from a Host Image**: Extract a hidden QR code from a host image using the key file.
 5. **Hide Multiple QR Codes in a Host Image**: Hide multiple QR codes inside a single host image and generate the key file for extraction.
