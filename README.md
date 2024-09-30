@@ -1,24 +1,46 @@
-# Voronoi QR Code Steganography Project
+# QR Code Generator & Steganography with Voronoi Diagrams
 
-## Overview
-This project implements a steganographic method for hiding QR codes using Voronoi diagrams. It allows you to:
-- Create QR codes with custom messages.
-- Hide a secret QR code inside a host QR code using a Voronoi partitioning algorithm.
-- Extract hidden QR codes from augmented QR images.
+## Description
+
+This program allows you to generate QR codes, hide them within host images using Voronoi diagrams, and extract them later. It also includes features for hiding and extracting multiple QR codes from a single host image. The program provides an interactive menu with various options to manipulate the generated and augmented QR codes.
 
 ## Features
-- **Generate QR Codes**: Create a QR code with any message you choose.
-- **Hide QR Codes**: Steganographically hide a secret QR code within a host QR code using Voronoi diagrams.
-- **Extract Hidden QR Codes**: Extract the hidden QR code from an augmented QR image.
-- **Voronoi Diagrams**: Uses Voronoi diagrams to partition the image and determine where and how the secret QR code is embedded.
 
-## How It Works
-1. **Voronoi Diagrams**: The image is divided into regions (called germs) using Voronoi partitioning. Each region is associated with a specific color or pixel range from the host QR code.
-2. **Steganographic Key**: A key is generated based on Voronoi regions, which determines how the secret QR code is hidden. The key ensures that pixels from the host QR code and the secret QR code interact in a specific pattern, making the secret QR code retrievable.
-3. **Embedding the QR Code**: For each pixel in the host QR code, the algorithm uses the Voronoi region’s key to determine how to hide the corresponding pixel of the secret QR code. The result is a new "augmented" QR code that looks like the host but secretly contains the hidden QR code.
-4. **Extracting the Hidden QR Code**: Using the same Voronoi key, the hidden QR code is extracted from the augmented QR image.
+The program includes the following functionalities:
 
-## Dependencies
-You can install the required dependencies with the following command:
+1. **Generate a QR Code**: Create a QR code with a custom message and save it as a `.png` file.
+2. **Hide a QR Code in a Host Image**: Select a generated QR code and hide it within a host image using Voronoi diagrams, generating a key file for extraction.
+4. **Extract a QR Code from a Host Image**: Extract a hidden QR code from a host image using the key file.
+5. **Hide Multiple QR Codes in a Host Image**: Hide multiple QR codes inside a single host image and generate the key file for extraction.
+6. **Extract Multiple QR Codes from a Host Image**
+7. **Voronoi Diagram – Hide Multiple QR Codes**: Hide multiple QR codes in a host image using Voronoi diagrams, providing additional control over the process.
+8. **Voronoi Diagram – Extract Multiple QR Codes**: Extract multiple QR codes hidden using Voronoi diagrams from a host image.
+
+## Requirements
+
+To run the program, the following Python libraries are required:
+
+- `opencv-python`
+- `qrcode`
+- `numpy`
+
+You can install them using `pip`:
+
 ```bash
-pip install opencv-python numpy qrcode[pil]
+pip install opencv-python qrcode numpy
+```
+## Directory Structure
+
+The first launch create 3 directories with the following roles :
+
+- `generated_qr/`: Contains the generated QR codes.
+- `augmented_qr/`: Contains the host images with hidden QR codes and the corresponding key files for extraction.
+- `extracted_qr/`: Contains the extracted QR codes.
+
+## Voronoi Keys
+
+When hiding QR codes using Voronoi diagrams, the program generates a key file corresponding to the embedded QR code. This key file is stored in the augmented_qr directory and contains information necessary for extracting the hidden QR codes later. Each key file includes:
+
+- Coordinates of Germs: The positions used for embedding the QR codes.
+- Number of Germs: The total count of germs used in the Voronoi diagram for the specific embedding.
+This allows for precise extraction of the hidden QR codes when using the corresponding key file.
