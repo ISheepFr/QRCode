@@ -8,13 +8,22 @@ This program allows you to generate QR codes, hide them within host images using
 
 The program includes the following functionalities:
 
-1. **Generate a QR Code**: Create a QR code with a custom message and save it as a `.png` file. ![option_1](1_create_qr.png) ![qr generated](1_normal_qr.png)
-2. **Hide a QR Code in a Host Image**: Select a generated QR code and hide it within a host image using Voronoi diagrams, generating a key file for extraction.
-4. **Extract a QR Code from a Host Image**: Extract a hidden QR code from a host image using the key file.
-5. **Hide Multiple QR Codes in a Host Image**: Hide multiple QR codes inside a single host image and generate the key file for extraction.
-6. **Extract Multiple QR Codes from a Host Image**
-7. **Voronoi Diagram – Hide Multiple QR Codes**: Hide multiple QR codes in a host image using Voronoi diagrams, providing additional control over the process.
-8. **Voronoi Diagram – Extract Multiple QR Codes**: Extract multiple QR codes hidden using Voronoi diagrams from a host image.
+1. **Generate a QR Code**: Create a QR code with a custom message and save it as a `.png` file. <br><br>
+<img src="img/1_normal_qr.png" width="200" height="200" alt="Generated normal QR Code"></img> &nbsp;&nbsp; <img src="img/2_secret_qr.png" width="200" height="200" alt="Generated secret QR Code"></img> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Normal QR* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Secret QR*
+
+3. **Hide a QR Code in a Host Image**: Select a generated QR code and hide it within a host image using Voronoi diagrams, generating a key file for extraction.<br><br>
+<img src="img/2_hide_qr.png" height="200" alt="option hide"></img> &nbsp;&nbsp; <img src="img/2_dissimulated_qr.png" width="200" height="200" alt="hidden_qr"></img> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Command menu* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Augmented QR*
+
+5. **Extract a QR Code from a Host Image**: Extract a hidden QR code from a host image using the key file. <br><br>
+<img src="img/3_menu.png" height="200" alt="option extract"></img> &nbsp;&nbsp; <img src="img/3_extract.png" height="200" alt="extract process"></img> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Command menu* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Final extracted QR*
+
+7. **Hide Multiple QR Codes in a Host Image**: Hide multiple QR codes inside a single host image and generate the key file for extraction.
+8. **Extract Multiple QR Codes from a Host Image**
+9. **Voronoi Diagram – Hide Multiple QR Codes**: Hide multiple QR codes in a host image using Voronoi diagrams, providing additional control over the process.
+10. **Voronoi Diagram – Extract Multiple QR Codes**: Extract multiple QR codes hidden using Voronoi diagrams from a host image.
 
 ## Requirements
 
